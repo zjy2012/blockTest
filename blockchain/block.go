@@ -9,8 +9,8 @@ import (
 const nodeVersion = 0
 
 type Hash = string
-
-func NewBlock(prevHash Hash, tsx string) *Block {
+//区块的构造方法
+func NewBlock(prevHash Hash, tsx string) *Block {//当前的交易信息
 	b := &Block{
 		header: BlockHeader{
 			version:       nodeVersion,
